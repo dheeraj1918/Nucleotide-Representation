@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <h1>NUCLEOTIDE REPRESENTATION</h1><hr>
+        <div class="table">
+            <table class="table-1">
+                <h2>PNG encoded DNA sequence</h2>
+                <tr>
+                  <th>Nucleotides</th>
+                  <th>RGB</th>
+                  <th>Color name</th>
+                </tr>
+                <tr>
+                  <td>A ➞ Adenine</td>
+                  <td>(0,0,255)</td>
+                  <td>Red</td>
+                </tr>
+                <tr>
+                  <td>G ➞ Guanine</td>
+                  <td>(0,100,0)</td>
+                  <td>Blue</td>
+                </tr>
+                <tr>
+                  <td>C ➞ Cytosine</td>
+                  <td>(255,0,0)</td>
+                  <td>Green</td>
+                </tr>
+                <tr>
+                  <td>T ➞ Thymine</td>
+                  <td>(255,255,0)</td>
+                  <td>Yellow</td>
+                </tr>
+              </table>
+              <table class="table-2">
+                <h2>Basic Encoding</h2>
+                <tr>
+                  <th>Two bits</th>
+                  <th>Nucleotides</th> 
+                </tr>
+                <tr>
+                  <td>00</td>
+                  <td>A (Adenine)</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>G (Guanine)</td>
+                </tr>
+                <tr>
+                  <td>01</td>
+                  <td>C (Cytosine)</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>T (Thymine)</td>
+                </tr>
+              </table>
+              <hr>
+              <img src="dna-basics.jpg" alt="dna-basics">
+              <figcaption>The nucleotide in DNA consists of a sugar (deoxyribose), one of four bases (cytosine (C), thymine (T), adenine (A), guanine (G)), and a phosphate. Cytosine and thymine are pyrimidine bases, while adenine and guanine are purine bases.</figcaption>
+              <hr>
+              <h2>NUCLEOTIDE CONVERTOR</h2>
+            <input type="text" id="inputString" placeholder="Enter a string">
+            <button onclick="convertToNucleotides()">Convert</button><br>
+            <textarea class="result" id="result" name="result" rows="0" cols="0"></textarea><br>
+            <button class="copy-button" onclick="myFunction()" onmouseout="outFunc()">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </button>
+           <hr>
+           <footer>
+            <h3 >This Webpage is prepared by <a href="https://www.instagram.com/dheerajpabolu_1918/" target="_blank">Dheeraj Pabolu</a></h3>
+            <h4 ><a href="mailto:subrahmanyadheeraj1918@gmail.com" target="_blank">CONTACT ME</a></h4>
+            <h3 >Reference - <a href="https://mitjafelicijan.com/encoding-binary-data-into-dna-sequence.html" target="_blank">mitjafelicijan.com</a>
+            </h3>
+           </footer>
+</body>
+</html>
